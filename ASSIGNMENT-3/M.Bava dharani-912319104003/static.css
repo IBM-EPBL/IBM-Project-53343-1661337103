@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(243, 218, 168);
+}
+
+h1{
+    color: black;
+}
+
+.ImgSlider{
+    width: 60%;
+    height: 600px;
+    background-image: url('https://islandpacific.com/wp-content/uploads/2019/08/retail-inventory-management-1-1-1.jpg');
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeImage 60s linear infinite;
+}
+
+@keyframes changeImage{
+    0% {
+        background-image: url('https://cdn.wallstreetmojo.com/wp-content/uploads/2021/08/Inventory-Management.jpg');
+    }
+    25% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRegvE8QSM76iw9qfe4QCjdb3vw6o742Hzlsw&usqp=CAU');
+    }
+    50% {
+        background-image: url('https://img.freepik.com/premium-vector/financial-planning-app-earnings-expenses-control-budget-planning_194360-373.jpg?w=2000');
+    }
+    75% {
+        background-image: url('https://c8.alamy.com/comp/2GC00T5/budget-and-expense-tracker-app-and-online-banking-2GC00T5.jpg');
+    }
+    100% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGWD_f8F8vTvjXfbcQs22zrDsQvkrzPsC8NKoTtGgrO0APt9Ef-ezGJM5rf7yb7WfoWc&usqp=CAU');
+    }
+}
